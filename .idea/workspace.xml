@@ -19,16 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64db50d-9e8f-44ca-ac0e-dc25d17a5de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/douyinS2L.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CIApy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CIApy.iml" afterDir="false" />
+    <list default="true" id="f64db50d-9e8f-44ca-ac0e-dc25d17a5de0" name="Default Changelist" comment="封装抖音、biz、uid和微博手转网，剩uid有bug无法登录微博">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Douyin_short2long.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_weibo_mobile2web.py" beforeDir="false" afterPath="$PROJECT_DIR$/weiboM2W.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weChat_biz.py" beforeDir="false" afterPath="$PROJECT_DIR$/weChat_biz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo_uid.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo_uid.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,8 +235,16 @@
       <workItem from="1596098150857" duration="2803000" />
       <workItem from="1596102003948" duration="104000" />
       <workItem from="1596454394922" duration="304000" />
-      <workItem from="1596454741154" duration="7260000" />
+      <workItem from="1596454741154" duration="7869000" />
     </task>
+    <task id="LOCAL-00001" summary="封装抖音、biz、uid和微博手转网，剩uid有bug无法登录微博">
+      <created>1596462276759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596462276759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +261,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="封装抖音、biz、uid和微博手转网，剩uid有bug无法登录微博" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装抖音、biz、uid和微博手转网，剩uid有bug无法登录微博" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596454535779">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -275,22 +279,22 @@
     </state>
     <state x="199" y="258" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1596101487207" />
     <state x="249" y="322" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596454853660" />
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom" timestamp="1596462020925">
+    <state width="670" height="392" key="GridCell.Tab.0.bottom" timestamp="1596462596668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596462020925" />
-    <state width="1877" height="392" key="GridCell.Tab.0.center" timestamp="1596462020924">
+    <state width="670" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596462596668" />
+    <state width="670" height="392" key="GridCell.Tab.0.center" timestamp="1596462596668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596462020924" />
-    <state width="1877" height="392" key="GridCell.Tab.0.left" timestamp="1596462020924">
+    <state width="670" height="392" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596462596668" />
+    <state width="670" height="392" key="GridCell.Tab.0.left" timestamp="1596462596668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596462020924" />
-    <state width="1877" height="392" key="GridCell.Tab.0.right" timestamp="1596462020924">
+    <state width="670" height="392" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596462596668" />
+    <state width="670" height="392" key="GridCell.Tab.0.right" timestamp="1596462596668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596462020924" />
+    <state width="670" height="392" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596462596668" />
     <state width="1340" height="348" key="GridCell.Tab.1.bottom" timestamp="1596461280878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -312,21 +316,16 @@
     </state>
     <state x="267" y="78" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596102107501" />
     <state x="843" y="119" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596457437782" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596462291744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596462291744" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1596456321987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596456321987" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/douyinS2L.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="df1.抖音URL.tolist()" language="Python" />
@@ -344,7 +343,7 @@
     <SUITE FILE_PATH="coverage/pysupport$new_weibo_mobile2web.coverage" NAME="new_weibo_mobile2web Coverage Results" MODIFIED="1596456473087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pysupport$Douyin_short2long.coverage" NAME="Douyin_short2long Coverage Results" MODIFIED="1596457136795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pysupport$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1596457791444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pysupport$main.coverage" NAME="main Coverage Results" MODIFIED="1596462020914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pysupport$main.coverage" NAME="main Coverage Results" MODIFIED="1596462596656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pysupport$weibo_uid.coverage" NAME="weibo_uid Coverage Results" MODIFIED="1596460473038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pysupport$weChat_biz.coverage" NAME="weChat_biz Coverage Results" MODIFIED="1596459679463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
