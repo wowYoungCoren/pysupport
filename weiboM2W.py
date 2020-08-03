@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import tkinter as tk
 from tkinter import filedialog
+from readFile import *
 
 
 # 62进制转10进制的函数
@@ -21,12 +22,9 @@ def changeBase(n, b):
         return baseList[y]
 
 
-def main():
-    # 文件路径
-    root = tk.Tk()
-    root.withdraw()  # 选取文件夹
-    Filepath = filedialog.askopenfilename()  # 选取文件
-    data = pd.read_excel(Filepath)  # 读取文件
+def weiboM2W():
+
+    data = readFile()
 
     # 历遍每一个网址
     for i in range(data.shape[0]):
@@ -57,11 +55,10 @@ def main():
             pass
     data.columns = ['网页端url']  # 更换表头名
 
-    return data.to_excel("网页端.xlsx", index=False)  # 输出excel
+    return data.to_excel(BASE_DIR + "网页端.xlsx", index=False)  # 输出excel
 
-
-main()
-
+if __name__ == '__main__':
+    weiboM2W()
 
 
 
