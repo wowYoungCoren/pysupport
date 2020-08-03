@@ -24,8 +24,8 @@ def changeBase(n, b):
 def main():
     # 文件路径
     root = tk.Tk()
-    root.withdraw()  # 获得选择好的文件夹
-    Filepath = filedialog.askopenfilename()  # 获得选择好的文件
+    root.withdraw()  # 选取文件夹
+    Filepath = filedialog.askopenfilename()  # 选取文件
     data = pd.read_excel(Filepath)  # 读取文件
 
     # 历遍每一个网址
