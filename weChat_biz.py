@@ -37,7 +37,7 @@ def weChatBiz():
             window_after = browser.window_handles[1]
             browser.switch_to_window(window_after)
 
-            time.sleep(4)
+            time.sleep(1)
 
             res3 = requests.get(browser.current_url)
             a = re.findall('var biz = "(\w+==)',res3.text)
