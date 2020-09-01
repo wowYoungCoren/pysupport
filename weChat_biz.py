@@ -11,6 +11,7 @@ from readFile import *
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+# 获取微信公众Biz
 def weChatBiz():
     wechatlist = readFile()[0].tolist()
 
@@ -23,10 +24,12 @@ def weChatBiz():
     name = []
     biz = []
 
+
     for i in wechatlist:
         browser = webdriver.Chrome(options=chrome_options, executable_path=".chrome/chromedriver.exe")
         url = 'https://weixin.sogou.com/weixin?type=1&s_from=input&query='+ i +'&ie=utf8&_sug_=n&_sug_type_='
-        browser.get(url) # 打开浏览器预设网址
+        # 打开浏览器预设网址
+        browser.get(url)
         urls = browser.find_elements_by_xpath("//a")
         window_before = browser.window_handles[0]
 
