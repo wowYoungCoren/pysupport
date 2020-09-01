@@ -11,7 +11,6 @@ import tkinter as tk
 from tkinter import filedialog
 from readFile import *
 
-# hey man 21222222
 # 62进制转10进制的函数
 def changeBase(n, b):
     baseList = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -21,7 +20,7 @@ def changeBase(n, b):
     else:
         return baseList[y]
 
-
+# 微博手机链接转网页端链接
 def weiboM2W():
 
     data = readFile()
