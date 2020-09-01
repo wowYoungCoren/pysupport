@@ -11,7 +11,7 @@ import tkinter as tk
 from tkinter import filedialog
 from readFile import *
 
-# hey man 2
+# hey man 21222
 # 62进制转10进制的函数
 def changeBase(n, b):
     baseList = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
