@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64db50d-9e8f-44ca-ac0e-dc25d17a5de0" name="Default Changelist" comment="" />
+    <list default="true" id="f64db50d-9e8f-44ca-ac0e-dc25d17a5de0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyinS2L.py" beforeDir="false" afterPath="$PROJECT_DIR$/douyinS2L.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +66,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -237,7 +246,7 @@
       <workItem from="1596504286950" duration="1441000" />
       <workItem from="1597672844965" duration="3570000" />
       <workItem from="1598948772237" duration="659000" />
-      <workItem from="1598951860635" duration="249000" />
+      <workItem from="1598951860635" duration="1541000" />
     </task>
     <task id="LOCAL-00001" summary="封装抖音、biz、uid和微博手转网，剩uid有bug无法登录微博">
       <created>1596462276759</created>
@@ -274,7 +283,28 @@
       <option name="project" value="LOCAL" />
       <updated>1598952037021</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="试跑结果">
+      <created>1598952130446</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598952130446</updated>
+    </task>
+    <task id="LOCAL-00007" summary="试跑结果">
+      <created>1598952308099</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598952308099</updated>
+    </task>
+    <task id="LOCAL-00008" summary="试跑结果">
+      <created>1598952356929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598952356929</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="581" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1596098313869" />
-    <state x="270" y="23" key="CommitChangelistDialog2" timestamp="1598952036690">
+    <state x="270" y="23" key="CommitChangelistDialog2" timestamp="1598952356684">
       <screen x="0" y="23" width="1366" height="741" />
     </state>
-    <state x="270" y="23" key="CommitChangelistDialog2/0.23.1366.741@0.23.1366.741" timestamp="1598952036690" />
+    <state x="270" y="23" key="CommitChangelistDialog2/0.23.1366.741@0.23.1366.741" timestamp="1598952356684" />
     <state x="1097" y="481" key="FileChooserDialogImpl" timestamp="1597675113610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,15 +387,16 @@
     </state>
     <state x="267" y="78" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596102107501" />
     <state x="843" y="119" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597675115675" />
-    <state x="280" y="151" key="Vcs.Push.Dialog.v2" timestamp="1598952051333">
+    <state x="280" y="151" key="Vcs.Push.Dialog.v2" timestamp="1598952377034">
       <screen x="0" y="23" width="1366" height="741" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596462865118" />
-    <state x="280" y="151" key="Vcs.Push.Dialog.v2/0.23.1366.741@0.23.1366.741" timestamp="1598952051333" />
-    <state x="952" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596504580938">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="280" y="151" key="Vcs.Push.Dialog.v2/0.23.1366.741@0.23.1366.741" timestamp="1598952377034" />
+    <state x="677" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598953698584">
+      <screen x="0" y="23" width="1366" height="741" />
     </state>
     <state x="952" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596504580938" />
+    <state x="677" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1366.741@0.23.1366.741" timestamp="1598953698584" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1596456321987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
