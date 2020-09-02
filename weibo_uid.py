@@ -57,19 +57,19 @@ def weiboUID():
     #循环每行数据的第30-45字符并命名为“res”
     for i in weibolist[30:45]:
         res=requests.get("https://s.weibo.com/user?q="+i+"&Refer=index")
-        website=re.search("//weibo.com/([/a-zA-Z0-9_\u4e00-\u9fa5]+)",res.text).group(0)
+        website=re.search("//weibo.com/([/a-zA-Z0-9_\u4e00-\u9fa5]+)", res.text).group(0)
         res2=requests.get("https:"+website,cookies=cookies)
-        a=re.findall("fuid=(\d+)&",res2.text)
-        b=re.findall("&fname=([-a-zA-Z0-9_\u4e00-\u9fa5]+)&",res2.text)
+        a=re.findall("fuid=(\d+)&", res2.text)
+        b=re.findall("&fname=([-a-zA-Z0-9_\u4e00-\u9fa5]+)&", res2.text)
         weibo_uid.append(a)
         weibo_name.append(b)
-        print(i+"                ",end="\r")
+        print(i+"                ", end="\r")
         time.sleep(2)
 
 
     #储存到dataframe里然后再输出到"d:/weibo.xlsx"，同时保留“name”、“uid”两列的列名称
     conseq=pd.DataFrame((pd.Series([x[0] if len(x[:])!=0 else x[:] for x in weibo_name]),pd.Series([y[0] if len(y[:])!=0 else y[:] for y in weibo_uid]))).T
-    conseq.to_excel(BASE_DIR + "weibo_uid.xlsx", index=False, header=["name","uid"])
+    conseq.to_excel(BASE_DIR + "\weibo_uid.xlsx", index=False, header=["name", "uid"])
 
     #告诉console任务完成
     print("    ")

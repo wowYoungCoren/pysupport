@@ -21,18 +21,18 @@ if __name__ == '__main__':
             print("1. 抖音短链转长链")
             print("2. 微博手机转网页URL")
             print("3. 微信公众号BIZ")
-            print("4. 微博UID")
-            print("5. 退出程序\n")
-            select = input("请输入您的选择[1/2/3/4/5]：")
+            #print("4. 微博UID")
+            print("0. 退出程序\n")
+            select = input("请输入您的选择[1/2/3 or 0]：")
             if select == "1":
                 douyinS2L.dyS2L()
             elif select == "2":
                 weiboM2W.weiboM2W()
             elif select == "3":
                 weChat_biz.weChatBiz()
-            elif select == "4":
-                weibo_uid.weiboUID()
-            elif select == "5":
+            #elif select == "4":
+                #weibo_uid.weiboUID()
+            elif select == "0":
                 break
         except Exception as e:
             print(e)

@@ -4,7 +4,13 @@ import pandas as pd
 import numpy as np
 import os
 
-BASE_DIR = "Results/"
+import winreg
+def get_desktop():
+    key =winreg.OpenKey(winreg.HKEY_CURRENT_USER,r'Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders')
+    return winreg.QueryValueEx(key, "Desktop")[0]
+
+#BASE_DIR = "Results/"
+BASE_DIR = get_desktop()
 
 def readFile():
     # 文件路径

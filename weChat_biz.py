@@ -12,6 +12,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def weChatBiz():
+    # 读取txt文档但不读取文档的抬头，把位置为在最左的字串更换为list数据格式
     wechatlist = readFile()[0].tolist()
 
     chrome_options = webdriver.ChromeOptions()
@@ -19,14 +20,15 @@ def weChatBiz():
 
     chrome_options.add_argument('--window-size=400,600')
 
-    #创建俩新变量
+    #创建两个新变量
     name = []
     biz = []
 
     for i in wechatlist:
         browser = webdriver.Chrome(options=chrome_options, executable_path=".chrome/chromedriver.exe")
         url = 'https://weixin.sogou.com/weixin?type=1&s_from=input&query='+ i +'&ie=utf8&_sug_=n&_sug_type_='
-        browser.get(url) # 打开浏览器预设网址
+        # 打开浏览器预设网址
+        browser.get(url)
         urls = browser.find_elements_by_xpath("//a")
         window_before = browser.window_handles[0]
 
@@ -55,5 +57,5 @@ def weChatBiz():
         print(a, b)
 
     final=pd.DataFrame((pd.Series([x[0] if len(x[:])!=0 else x[:] for x in name]),pd.Series([y[0] if len(y[:])!=0 else y[:] for y in biz]))).T
-    final.to_excel(BASE_DIR + "微信biz.xlsx", header=["name", "biz"], index=False)
+    final.to_excel(BASE_DIR + "\微信biz.xlsx", header=["name", "biz"], index=False)
 
