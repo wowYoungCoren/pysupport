@@ -24,7 +24,7 @@ def weChatBiz():
     biz = []
 
     for i in wechatlist:
-        browser = webdriver.Chrome(options=chrome_options, executable_path=".chrome/chromedriver.exe")
+        browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver.exe")
         url = 'https://weixin.sogou.com/weixin?type=1&s_from=input&query='+ i +'&ie=utf8&_sug_=n&_sug_type_='
         # 打开浏览器预设网址
         browser.get(url)
