@@ -30,10 +30,12 @@ if __name__ == '__main__':
                 weiboM2W.weiboM2W()
             elif select == "3":
                 weChat_biz.weChatBiz()
-            #elif select == "4":
-                #weibo_uid.weiboUID()
             elif select == "0":
                 break
+
+            #elif select == "4":
+                #weibo_uid.weiboUID()
+
         except Exception as e:
             print(e)
             break

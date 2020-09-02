@@ -11,7 +11,7 @@ import tkinter as tk
 from tkinter import filedialog
 from readFile import *
 
-# 62进制转10进制的函数
+# 62进制转10进制
 def changeBase(n, b):
     baseList = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     x, y = divmod(n, b)
@@ -20,12 +20,12 @@ def changeBase(n, b):
     else:
         return baseList[y]
 
-# 微博手机链接转网页端链接
+# 微博手机链接转网页端
 def weiboM2W():
 
     data = readFile()
 
-    # 历遍每一个网址
+    # 历遍每个网址
     for i in range(data.shape[0]):
         # 以“://m.weibo”判断是否为手机端
         if "://m.weibo" in data.iloc[i, 0]:

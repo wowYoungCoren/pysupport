@@ -6,7 +6,7 @@ import time
 import pandas as pd
 from readFile import *
 
-#抖音短链专长链
+#抖音短链转长链
 def dyS2L():
     #用pandas包读取指定xlsx文档
     df1 = readFile()

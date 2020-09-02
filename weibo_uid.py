@@ -18,16 +18,14 @@ def weiboUID():
     # 调用带参数的谷歌浏览器
     driver = webdriver.Chrome(options=option, executable_path=".chrome/chromedriver.exe")
     driver.get('https://weibo.com/')
-    print('正在加载界面....')
-    time.sleep(1)
+    print('正在加载界面...')
+    time.sleep(0.5)
 
-    WebDriverWait(driver, 20, 0.5).until(EC.visibility_of_element_located((By.ID, 'loginname'))).send_keys('13676010298')
+    WebDriverWait(driver, 20, 0.5).until(EC.visibility_of_element_located((By.ID, 'loginname'))).send_keys('xxxxxx')
 
-    driver.find_element_by_name('password').send_keys('Yk970716!')
+    driver.find_element_by_name('password').send_keys('xxxxxx')
     driver.find_element_by_xpath('//*[@id="pl_login_form"]/div/div[3]/div[6]/a/span').click()
-    time.sleep(1)
-
-
+    time.sleep(0.5)
 
 
     WebDriverWait(driver,100,0.5).until(EC.visibility_of_element_located((By.CLASS_NAME,'B_index')))

@@ -17,14 +17,11 @@ def weChatBiz():
     wechatlist = readFile()[0].tolist()
 
     chrome_options = webdriver.ChromeOptions()
-    #chrome_options.add_argument('--headless')
-
     chrome_options.add_argument('--window-size=400,600')
 
     #创建两个新变量
     name = []
     biz = []
-
 
     for i in wechatlist:
         browser = webdriver.Chrome(options=chrome_options, executable_path=".chrome/chromedriver.exe")
@@ -34,18 +31,18 @@ def weChatBiz():
         urls = browser.find_elements_by_xpath("//a")
         window_before = browser.window_handles[0]
 
-        time.sleep(1)
+        time.sleep(0.5)
 
         if (urls[17] is not None) and (urls[17].get_attribute("href") != "javascript:void(0);") :
             urls[17].click()
             window_after = browser.window_handles[1]
             browser.switch_to_window(window_after)
 
-            time.sleep(1)
+            time.sleep(0.5)
 
             res3 = requests.get(browser.current_url)
             a = re.findall('var biz = "(\w+==)',res3.text)
-            b = re.findall('var title ="([a-zA-Z0-9_\u4e00-\u9fa5]+)',res3.text)
+            b = re.findall('var title ="([a-zA-Z0-9_\u4e00-\u9fa5]+)', res3.text)
             biz.append(a)
             name.append(b)
 
