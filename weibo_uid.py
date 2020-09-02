@@ -11,10 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from readFile import *
 
+#微博UID获取函数
 def weiboUID():
     option=webdriver.ChromeOptions()
     # option.add_argument('headless') # 设置option
-    driver = webdriver.Chrome(options=option, executable_path=".chrome/chromedriver.exe")  # 调用带参数的谷歌浏览器
+    # 调用带参数的谷歌浏览器
+    driver = webdriver.Chrome(options=option, executable_path=".chrome/chromedriver.exe")
     driver.get('https://weibo.com/')
     print('正在加载界面....')
     time.sleep(1)

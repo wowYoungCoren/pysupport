@@ -15,15 +15,19 @@ BASE_DIR = get_desktop()
 def readFile():
     # 文件路径
     root = tk.Tk()
-    root.withdraw()  # 选取文件夹
-    file = filedialog.askopenfilename()  # 选取文件
+    # 选取文件夹
+    root.withdraw()
+    # 选取文件
+    file = filedialog.askopenfilename()
 
     _, _, extension = executePath(file)
     data = None
     if extension == ".xlsx" or extension == ".xls":
-        data = pd.read_excel(file)  # 读取文件
+        # 读取文件
+        data = pd.read_excel(file)
     elif extension == ".txt" or extension == ".csv":
-        data = pd.read_csv(file, header=None)  # 读取文件
+        # 读取文件（不带列名）
+        data = pd.read_csv(file, header=None)
     # if file != '':
     #     data = pd.read_excel(Filepath)  # 读取文件
 

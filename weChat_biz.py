@@ -11,6 +11,7 @@ from readFile import *
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+# 获取微信公众Biz
 def weChatBiz():
     # 读取txt文档但不读取文档的抬头，把位置为在最左的字串更换为list数据格式
     wechatlist = readFile()[0].tolist()
@@ -23,6 +24,7 @@ def weChatBiz():
     #创建两个新变量
     name = []
     biz = []
+
 
     for i in wechatlist:
         browser = webdriver.Chrome(options=chrome_options, executable_path=".chrome/chromedriver.exe")
