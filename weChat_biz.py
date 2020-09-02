@@ -56,5 +56,5 @@ def weChatBiz():
         print(a, b)
 
     final=pd.DataFrame((pd.Series([x[0] if len(x[:])!=0 else x[:] for x in name]),pd.Series([y[0] if len(y[:])!=0 else y[:] for y in biz]))).T
-    final.to_excel(BASE_DIR + "\微信biz.xlsx", header=["name", "biz"], index=False)
+    final.to_excel(BASE_DIR + "\微信biz结果.xlsx", header=["name", "biz"], index=False)
 

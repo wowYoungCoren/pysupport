@@ -57,7 +57,7 @@ def weiboM2W():
     # 更换表头名
     data.columns = ['网页端url']
     # 输出excel
-    return data.to_excel(BASE_DIR + "\网页端.xlsx", index=False)
+    return data.to_excel(BASE_DIR + "\微博网页URL结果.xlsx", index=False)
 
 if __name__ == '__main__':
     weiboM2W()

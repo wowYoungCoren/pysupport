@@ -33,5 +33,5 @@ def dyS2L():
         time.sleep(2)
 
     #写出list1里的所有内容到"iris.csv"文档里，不带有列名
-    pd.DataFrame(list1).to_csv(BASE_DIR + "\dyRes.csv", header=None, index=False)
+    pd.DataFrame(list1).to_csv(BASE_DIR + "\抖音结果.csv", header=None, index=False)
 
