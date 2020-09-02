@@ -8,11 +8,8 @@ from readFile import *
 
 #抖音短链转长链
 def dyS2L():
-    #用pandas包读取指定xlsx文档
-    df1 = readFile()
-
-    #转换为list数据格式
-    urlList = df1.iloc[:, 0].tolist()
+    #用pandas包读取指定xlsx文档,转换为list数据格式
+    urlList = readFile().iloc[:, 0].tolist()
 
     #创建名为“geturl”的功能，输入参数为url
     def geturl(url):
