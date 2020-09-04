@@ -10,6 +10,7 @@ import numpy as np
 import tkinter as tk
 from tkinter import filedialog
 from readFile import *
+import openpyxl
 
 # 62进制转10进制
 def changeBase(n, b):
